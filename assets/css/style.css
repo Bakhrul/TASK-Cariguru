@@ -8,9 +8,14 @@ a {
 
 .navbar-custom {
     background: white !important;
-    padding: 15px 0 !important;
+    padding: 15px !important;
 }
-
+.navbar-custom .container{
+    padding: 0 15px !important;
+}
+.navbar-custom .navbar-toggler{
+    padding: 0 !important;
+}
 .navbar-custom .navbar-nav .nav-item {
     padding: 0 10px;
     display: flex;
@@ -210,6 +215,9 @@ a {
 @media(max-width:575px) {
     .lesson-wrapper .lesson-element {
         width: 50%;
+    }
+    .navbar-custom .container{
+        padding: 0 !important;
     }
 }
 
