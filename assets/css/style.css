@@ -20,7 +20,9 @@ a {
 .navbar-custom .navbar-nav .nav-item:last-child {
     padding-right: 0 !important;
 }
-
+.navbar-custom .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0 !important;
+}
 .navbar-custom .navbar-nav .nav-item a {
     font-style: normal;
     font-weight: normal;
