@@ -12,7 +12,7 @@ a {
 }
 
 .navbar-custom .navbar-nav .nav-item {
-    padding: 0 15px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
 }
@@ -127,7 +127,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px 25px;
-
+    margin-bottom: 1em;
     background-repeat: no-repeat;
     background-size: 100% 430px;
 }
@@ -354,6 +354,12 @@ a {
     .teacher-wrapper .teacher-column {
         width: 100%;
     }
+
+    .teacher-wrapper .teacher-element .teacher-element__image-box img {
+        height: auto !important;
+        max-height: 440px !important;
+        min-height: 250px !important;
+    }
 }
 
 .teacher-wrapper .heading-teacher {
@@ -466,7 +472,8 @@ a {
 }
 
 .media-wrapper .media-element {
-    padding: 20px 10px;
+    padding: 15px;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -646,11 +653,15 @@ a {
 
 .footer-copy-wrapper {
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 19px;
     padding: 15px;
-    color: #E51453;
+    color: #000000 !important;
+}
+
+.color-primary {
+    color: #E51453 !important;
 }
 
 @media(max-width:480px) {
@@ -673,6 +684,8 @@ a {
 
     .hero-wrapper .hero-left-element .btn-more-hero {
         padding: 10px;
+        font-size: 14px !important;
+        width: 130px !important;
     }
 
     .lesson-wrapper .heading-lesson {
@@ -877,6 +890,10 @@ a {
     .footer-copy-wrapper {
         font-size: 14px;
     }
+
+    .hero-wrapper .hero-right-element {
+        padding: 10em 15px !important;
+    }
 }
 
 .btn-show-whatsapp {
@@ -1019,5 +1036,39 @@ a {
 @media(max-width:280px) {
     .lesson-wrapper .lesson-element {
         width: 100% !important;
+    }
+}
+
+@media(max-width:575px) {
+    .footer-copy-wrapper .company-name {
+        text-align: left !important;
+    }
+
+    .blog-wrapper .blog-element .blog-element--image {
+        height: auto !important;
+        max-height: 400px !important;
+        min-height: 230px !important;
+    }
+
+    .hero-wrapper .hero-right-element {
+        padding: 21em 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .hero-wrapper .hero-left-element {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 30px 15px;
+        height: auto !important;
+    }
+
+    .hero-wrapper .hero-right-element {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 18em 15px;
+        height: auto !important;
+
+        background-position: center;
     }
 }
