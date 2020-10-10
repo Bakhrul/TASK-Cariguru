@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="115px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
+                        <li class="d-inline d-lg-none" style="margin-bottom: 1em;">
+                            <img src="assets/images/logo.png" width="115px">
+                            <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href="">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href="pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href="">Cari Guru</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href=""><button
+                                    class="btn btn-regist-nav">Daftar</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href=""><button
+                                    class="btn btn-signin-nav">Masuk</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8 col-md-8">
+                        <div class="hero-left-element"
+                            style="background-image: url(assets/images/hero/bg-hero-left.png);">
+                            <div class="blur"></div>
+                            <div style="z-index: 2;">
+                                <h5 class="title-hero" data-aos="fade-up" data-aos-delay="500">Belajar lebih
+                                    menyenangkan</h5>
+                                <p class="description-hero" data-aos="fade-up" data-aos-delay="500">Mau belajar online
+                                    atau guru datang ke rumah?
+                                    <br>Nikmati layanan <span class="font-weight-bold"
+                                        style="color: #E51453">TERBAIK</span> dari kami.</p>
+                                <button class="btn btn-more-hero" data-aos="fade-up" data-aos-delay="500">PESAN
+                                    LES</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="hero-right-element"
+                            style="background-image: url(assets/images/hero/bg-hero-right.png)">
+                            <button class="btn btn-play-hero" type="button" id="show-video" data-aos="fade-up"
+                                data-aos-delay="500"><i class="fa fa-play"></i></button>
+                            <div id="video-overlay" class="video-overlay-wrapper d-none"><button
+                                    class="btn btn-hidden-video" id="hidden-video" type="button">×</button><iframe
+                                    src="https://www.youtube.com/embed/xLWVa8e_jPg" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    class="frame-video"></iframe></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lesson" class="lesson-wrapper">
+            <div class="container aos-animate">
+                <h5 class="text-center heading-lesson" data-aos="fade-up" data-aos-delay="500">Mata Pelajaran Favorit
+                </h5>
+                <div class="row" data-aos="fade-up" data-aos-delay="500">
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FFF9FB;">
+                                <img src="assets/images/icon/icon-bahasa-inggris.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #E51453;">Bahasa Inggris
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FDF9FF;">
+                                <img src="assets/images/icon/icon-bahasa-indonesia.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #8338EC;">Bahasa
+                                Indonesia</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: rgba(255, 249, 231, 0.5);">
+                                <img src="assets/images/icon/icon-matematika.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #FFBE0B;">Matematika</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background:rgba(243, 248, 255, 0.5);">
+                                <img src="assets/images/icon/icon-fisika.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color:#3A86FF">Fisika</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image">
+                                <img src="assets/images/icon/icon-geografi.png" style="background: #FFFBF9;">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color:#FB5607">Geografi</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FFFBF9;">
+                                <img src="assets/images/icon/icon-kimia.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #FB5607;">Kimia</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #F9FCFF;">
+                                <img src="assets/images/icon/icon-biologi.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #3A86FF;">Biologi</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FDF9FF;">
+                                <img src="assets/images/icon/icon-sejarah.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #8338EC;">Sejarah</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FFF9FB;">
+                                <img src="assets/images/icon/icon-pkn.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #E51453;">PKn</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-custom-five col-xl-custom-five lesson-element">
+                        <div class="lesson-element--group">
+                            <div class="lesson-element--group__image" style="background: #FFFCF3;">
+                                <img src="assets/images/icon/icon-sosiologi.png">
+                            </div>
+                            <h5 class="text-center lesson-element--group__title" style="color: #FFBE0B;">Sosiologi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3" data-aos="fade-up" data-aos-delay="500">
+                    <button class="btn btn-view-more">Lihat Lebih Banyak</button>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="about-us-wrapper">
+            <div class="container">
+                <div class="row" style="flex-direction: row-reverse;">
+                    <div class="col-xl-6 col-lg-6">
+                        <img src="assets/images/hero/image-about.png" class="image-about-us">
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <h5 class="heading-about-us" data-aos="fade-up" data-aos-delay="500">Tentang Kami</h5>
+                        <div class="description-about-us" data-aos="fade-up" data-aos-delay="500">Layanan Les Privat
+                            Realtime</div>
+                        <ul class="list-about-us" data-aos="fade-up" data-aos-delay="500">
+                            <li>Guru Berkualitas</li>
+                            <li>Layanan pencarian guru</li>
+                            <li>Sistem belajar <i>Online</i> dan <i>offline</i></li>
+                            <li>Waktu bisa diatur sendiri</li>
+                            <li>Bisa privat atau berkelompok dengan teman</li>
+                            <li>Evaluasi pembelajaran</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="properties-about-us">
+                                    <div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center properties-about-us__image-box">
+                                            <img src="assets/images/icon/icon-pilihan-guru.png"></div>
+                                    </div>
+                                    <div class="properties-about-us__description">
+                                        <h5 class="properties-about-us__description-title">1.200</h5>
+                                        <div class="properties-about-us__description-description">Pilihan Guru</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="properties-about-us">
+                                    <div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center properties-about-us__image-box">
+                                            <img src="assets/images/icon/icon-room-meet.png"></div>
+                                    </div>
+                                    <div class="properties-about-us__description">
+                                        <h5 class="properties-about-us__description-title">123</h5>
+                                        <div class="properties-about-us__description-description">Room Meet</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="properties-about-us">
+                                    <div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center properties-about-us__image-box">
+                                            <img src="assets/images/icon/icon-pilihan-mapel.png"></div>
+                                    </div>
+                                    <div class="properties-about-us__description">
+                                        <h5 class="properties-about-us__description-title">14</h5>
+                                        <div class="properties-about-us__description-description">Pilihan Mata Pelajaran
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="properties-about-us">
+                                    <div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center properties-about-us__image-box">
+                                            <img src="assets/images/icon/icon-murid.png"></div>
+                                    </div>
+                                    <div class="properties-about-us__description">
+                                        <h5 class="properties-about-us__description-title">110.000</h5>
+                                        <div class="properties-about-us__description-description">Murid</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="teacher" class="teacher-wrapper"
+            style="background-image: url('assets/images/hero/bg-teacher.png');">
+            <img src="assets/images/icon/icon-star-left.png" class="icon-bg-left-teacher">
+            <img src="assets/images/icon/icon-star-right.png" class="icon-bg-right-teacher">
+            <div class="container">
+                <h5 class="text-center heading-teacher" data-aos="fade-up" data-aos-delay="500">Guru Terbaik</h5>
+                <p class="text-center description-teacher" data-aos="fade-up" data-aos-delay="500">Les Privat dengan
+                    Guru Terbaik kami</p>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-1.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-2.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-3.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-4.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-1.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-2.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-3.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 teacher-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="teacher-element">
+                            <div class="teacher-element__image-box">
+                                <img src="assets/images/teacher/images-teacher-4.png">
+                            </div>
+                            <div class="teacher-element__description">
+                                <div class="teacher-element__description-rating">5.0</div>
+                                <h5 class="teacher-element__description-name">Mahyuddin Noor</h5>
+                                <hr class="teacher-element__description-line">
+                                <p class="teacher-element__description-lesson">Pendidikan Bahasaa Inggris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="media" class="media-wrapper">
+            <div class="container">
+                <h5 class="text-center heading-media" data-aos="fade-up" data-aos-delay="500">Didukung dan diliput oleh
+                </h5>
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-1.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-2.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-3.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-4.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-5.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-6.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-1.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-2.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-3.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-4.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-5.png">
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 media-element" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <img src="assets/images/media/image-6.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog-wrapper">
+            <div class="container">
+                <h5 class="text-center heading-blog" data-aos="fade-up" data-aos-delay="500">Blog</h5>
+                <p class="text-center description-blog" data-aos="fade-up" data-aos-delay="500">Kumpulan Artikel dari
+                    Guru - Guru Hebat</p>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 blog-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="blog-element">
+                            <img class="blog-element--image" src="assets/images/blog/image_blog_3.png">
+                            <div class="blog-element__body">
+                                <span class="blog-element__body-categories">Metode Pembelajaran</span>
+                                <h5 class=" blog-element__body-title">Tips Menguasai Tenses dengan Metode Jari 4</h5>
+                                <div class="blog-element__body-posted">24 April 2020, ditulis oleh <span>Mahyuddin
+                                        Noor</span></div>
+                                <p class="blog-element__body-description">Belajar tenses bukanlah hal yang sulit, semua
+                                    tergantung bagaimana metode yang kita gunakan, serta bagaimana kita melatihnya
+                                    kembali agara semuanya dengan mudah diingat.</p>
+                                <a href="#" class="blog-element__body-more">Baca Selengkapnya ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 blog-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="blog-element">
+                            <img class="blog-element--image" src="assets/images/blog/image_blog_1.png">
+                            <div class="blog-element__body">
+                                <span class="blog-element__body-categories">Berita</span>
+                                <h5 class=" blog-element__body-title">Belajar menggunakan Spreadsheet untuk Keuangan
+                                </h5>
+                                <div class="blog-element__body-posted">24 April 2020, ditulis oleh <span>Mahyuddin
+                                        Noor</span></div>
+                                <p class="blog-element__body-description">Spreadsheet, salah satu layanan dari Google
+                                    yang belum begitu banyak di kenal oleh guru di sekolah, salah satunya saya.</p>
+                                <a href="#" class="blog-element__body-more">Baca Selengkapnya ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 blog-column" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="blog-element">
+                            <img class="blog-element--image" src="assets/images/blog/image_blog_2.png">
+                            <div class="blog-element__body">
+                                <span class="blog-element__body-categories">Berita</span>
+                                <h5 class=" blog-element__body-title">Membuat Sebuah Project Menggunakan CodeIgniter
+                                </h5>
+                                <div class="blog-element__body-posted">24 April 2020, ditulis oleh <span>Bill
+                                        Gates</span></div>
+                                <p class="blog-element__body-description">Framework yang satu ini dikenal sangat praktis
+                                    dan efiesen dalam pembuatan sebuah sistem web aplikasi. </p>
+                                <a href="#" class="blog-element__body-more">Baca Selengkapnya ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5" data-aos="fade-up" data-aos-delay="500">
+                    <a href="pages/blog.html"><button class="btn btn-view-more">Lihat Lebih Banyak</button></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/images/logo.png" class="footer-logo">
+                </div>
+                <div class="col-xl-2 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <h5 class="title-footer">Menu</h5>
+                    <ul class="list-footer-group">
+                        <li><a href="">Home</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="">Penghargaan</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <h5 class="title-footer">Layanan</h5>
+                    <ul class="list-footer-group">
+                        <li><a href="">Daftar Partner (Guru)</a></li>
+                        <li><a href="">Konfirmasi Pembayaran</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <h5 class="title-footer">Kontak</h5>
+                    <ul class="list-footer-group">
+                        <li><i class="fa fa-phone"></i>&ensp;+6289679249495</li>
+                        <li><i class="fa fa-envelope"></i>&ensp;support@cariguru.co.id</li>
+                        <li><i class="fa fa-home"></i>&ensp;Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-copy-wrapper">
+        <div class="container text-center">PT. Cari Inovasi Teknologi</div>
+    </section>
+    <button class="btn btn-show-whatsapp" type="button"><i class="fa fa-whatsapp"></i></button>
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            $('#show-video').click(function () {
+                $('#video-overlay').fadeIn().removeClass('d-none');
+            });
+            $('#hidden-video').click(function () {
+                $('#video-overlay').fadeOut().addClass('d-none');
+            });
+            $(window).scroll(function () {
+                70 < $(window).scrollTop() ?
+                    $(".navbar-custom").addClass("shadow-nav") :
+                    $(".navbar-custom").removeClass("shadow-nav");
+            });
+        })
+    </script>
+</body>
+
+</html>
